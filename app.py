@@ -40,10 +40,49 @@ st.markdown(
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
-diabetes_model = pickle.load(open(f'{working_dir}/Saved Models/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open(f'{working_dir}/Saved Models/heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open(f'{working_dir}/Saved Models/parkinsons_model.sav', 'rb'))
-breast_cancer_model=pickle.load(open(f'{working_dir}/Saved Models/breast_cancer_model.sav','rb'))
+#diabetes_model = pickle.load(open(f'{working_dir}/Saved Models/diabetes_model.sav', 'rb'))
+#heart_disease_model = pickle.load(open(f'{working_dir}/Saved Models/heart_disease_model.sav', 'rb'))
+#parkinsons_model = pickle.load(open(f'{working_dir}/Saved Models/parkinsons_model.sav', 'rb'))
+#breast_cancer_model=pickle.load(open(f'{working_dir}/Saved Models/breast_cancer_model.sav','rb'))
+import pickle
+import requests
+from io import BytesIO
+
+# GitHub repository URL
+github_repo_url = "https://github.com/your_username/your_repository/raw/main/"
+
+# Load the diabetes model
+diabetes_model_url = github_repo_url + "diabetes_model.sav"
+response = requests.get(diabetes_model_url)
+if response.status_code == 200:
+    diabetes_model = pickle.load(BytesIO(response.content))
+else:
+    st.error("Failed to load the diabetes model")
+
+# Load the heart disease model
+heart_disease_model_url = github_repo_url + "heart_disease_model.sav"
+response = requests.get(heart_disease_model_url)
+if response.status_code == 200:
+    heart_disease_model = pickle.load(BytesIO(response.content))
+else:
+    st.error("Failed to load the heart disease model")
+
+# Load the Parkinson's model
+parkinsons_model_url = github_repo_url + "parkinsons_model.sav"
+response = requests.get(parkinsons_model_url)
+if response.status_code == 200:
+    parkinsons_model = pickle.load(BytesIO(response.content))
+else:
+    st.error("Failed to load the Parkinson's model")
+
+# Load the breast cancer model
+breast_cancer_model_url = github_repo_url + "breast_cancer_model.sav"
+response = requests.get(breast_cancer_model_url)
+if response.status_code == 200:
+    breast_cancer_model = pickle.load(BytesIO(response.content))
+else:
+    st.error("Failed to load the breast cancer model")
+
 
 # Navbar
 st.markdown(
