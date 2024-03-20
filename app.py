@@ -1,7 +1,6 @@
 import os
 import pickle
 import streamlit as st
-from streamlit_option_menu import option_menu
 
 # Set page configuration
 st.set_page_config(
@@ -22,28 +21,6 @@ st.markdown(
             background-color: #006400; /* Dark Green */
             padding: 10px;
         }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
-# getting the working directory of the main.py
-working_dir = os.path.dirname(os.path.abspath(__file__))
-
-# loading the saved models
-diabetes_model = pickle.load(open(f'{working_dir}/Saved Models/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open(f'{working_dir}/Saved Models/heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open(f'{working_dir}/Saved Models/parkinsons_model.sav', 'rb'))
-breast_cancer_model=pickle.load(open(f'{working_dir}/Saved Models/breast_cancer_model.sav','rb'))
-
-# Navigation bar
-st.markdown(
-    """
-    <style>
-        .navbar {
-            background-color: #006400; /* Dark Green */
-            padding: 10px;
-        }
         .navbar a {
             color: white;
             padding: 8px 16px;
@@ -58,6 +35,15 @@ st.markdown(
     """
     , unsafe_allow_html=True
 )
+
+# getting the working directory of the main.py
+working_dir = os.path.dirname(os.path.abspath(__file__))
+
+# loading the saved models
+diabetes_model = pickle.load(open(f'{working_dir}/Saved Models/diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open(f'{working_dir}/Saved Models/heart_disease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open(f'{working_dir}/Saved Models/parkinsons_model.sav', 'rb'))
+breast_cancer_model=pickle.load(open(f'{working_dir}/Saved Models/breast_cancer_model.sav','rb'))
 
 # Navbar
 st.markdown(
