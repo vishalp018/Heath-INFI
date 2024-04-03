@@ -152,7 +152,7 @@ if selected == 'Diabetes Prediction':
     # getting the input data from the user
     col1, col2, col3 = st.columns(3)
     with col1:
-    name = st.text_input('Name')
+        name = st.text_input('Name')
 
     with col2:
         Date = st.text_input('Date')
