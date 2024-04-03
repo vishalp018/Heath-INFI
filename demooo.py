@@ -169,16 +169,16 @@ if selected == 'Diabetes Prediction':
         BloodPressure = st.text_input('Blood Pressure value ')
 
     with col1:
-        SkinThickness = st.text_input('Skin Thickness value <0 - 60> ')
+        SkinThickness = st.text_input('Skin Thickness value 0 - 60 ')
 
     with col2:
-        Insulin = st.text_input('Insulin Level <0 - 1000>')
+        Insulin = st.text_input('Insulin Level 0 - 1000')
 
     with col3:
-        BMI = st.text_input('BMI value <0 - 70>')
+        BMI = st.text_input('BMI value 0 - 70')
 
     with col1:
-        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value <0 - 1> ')
+        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value 0 - 1 ')
 
     with col2:
         Age = st.text_input('Age of the Person')
@@ -232,25 +232,25 @@ if selected == 'Heart Disease Prediction':
         cp = st.text_input('Chest Pain types')
 
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure <0 -200> ' )
+        trestbps = st.text_input('Resting Blood Pressure 0 -200 ' )
 
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl <0 -500> ')
+        chol = st.text_input('Serum Cholestoral in mg/dl 0 -500')
 
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl < 0 / 1> ')
+        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl  0 / 1 ')
 
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results <0 / 1> ')
+        restecg = st.text_input('Resting Electrocardiographic results 0 / 1 ')
 
     with col2:
-        thalach = st.text_input('Maximum Heart Rate achieved <0 - 300>')
+        thalach = st.text_input('Maximum Heart Rate achieved 0 - 300')
 
     with col3:
-        exang = st.text_input('Exercise Induced Angina <0 / 1>')
+        exang = st.text_input('Exercise Induced Angina 0 / 1')
 
     with col1:
-        oldpeak = st.text_input('ST depression induced by exercise <0 - 10>')
+        oldpeak = st.text_input('ST depression induced by exercise 0 - 10')
 
     with col2:
         slope = st.text_input('Slope of the peak exercise ST segment')
