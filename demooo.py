@@ -157,7 +157,7 @@ if selected == 'Diabetes Prediction':
     with col2:
         Date = st.text_input('Date')
     with col3:
-        mobile number = st.text_input('Mobile number')
+        mobile_number = st.text_input('Mobile number')
 
     with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
@@ -219,7 +219,7 @@ if selected == 'Heart Disease Prediction':
     with col2:
         Date = st.text_input('Date')
     with col3:
-        mobile number = st.text_input('Mobile number')
+        mobile_number = st.text_input('Mobile number')
     
 
     with col1:
@@ -295,7 +295,7 @@ if selected == "Parkinsons Prediction":
     with col2:
         Date = st.text_input('Date')
     with col3:
-        mobile number = st.text_input('Mobile number')
+        mobile_number = st.text_input('Mobile number')
 
     with col1:
         fo = st.text_input('MDVP:Fo(Hz)')
@@ -408,7 +408,7 @@ elif selected == "Breast Cancer Prediction":
     with col2:
         Date = st.text_input('Date')
     with col3:
-        mobile number = st.text_input('Mobile number')
+        mobile_number = st.text_input('Mobile number')
 
     with col1:
         for feature in breast_cancer_features[:len(breast_cancer_features)//5]:
