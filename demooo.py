@@ -151,6 +151,13 @@ if selected == 'Diabetes Prediction':
 
     # getting the input data from the user
     col1, col2, col3 = st.columns(3)
+        with col1:
+        name = st.text_input('Name')
+
+    with col2:
+        Date = st.text_input('Date')
+    with col3:
+        mobile number = st.text_input('Mobile number')
 
     with col1:
         Pregnancies = st.text_input('Number of Pregnancies')
@@ -210,7 +217,10 @@ if selected == 'Heart Disease Prediction':
         name = st.text_input('Name')
 
     with col2:
-        Date = st.text_input('')
+        Date = st.text_input('Date')
+    with col3:
+        mobile number = st.text_input('Mobile number')
+    
 
     with col1:
         age = st.text_input('Age')
@@ -279,6 +289,13 @@ if selected == "Parkinsons Prediction":
     st.title("Parkinson's Disease Prediction using ML")
 
     col1, col2, col3, col4, col5 = st.columns(5)
+    with col1:
+        name = st.text_input('Name')
+
+    with col2:
+        Date = st.text_input('Date')
+    with col3:
+        mobile number = st.text_input('Mobile number')
 
     with col1:
         fo = st.text_input('MDVP:Fo(Hz)')
@@ -385,6 +402,13 @@ elif selected == "Breast Cancer Prediction":
 
     # Organize input fields in columns
     col1, col2, col3, col4, col5 = st.columns(5)
+    with col1:
+        name = st.text_input('Name')
+
+    with col2:
+        Date = st.text_input('Date')
+    with col3:
+        mobile number = st.text_input('Mobile number')
 
     with col1:
         for feature in breast_cancer_features[:len(breast_cancer_features)//5]:
