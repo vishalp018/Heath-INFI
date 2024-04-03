@@ -141,7 +141,7 @@ if selected == 'Home':
     st.sidebar.write("[Vishal Pal](https://www.linkedin.com/in/vishalp018/)")
     st.sidebar.write("[Vadapalli Kausik Varma](https://www.linkedin.com/in/kausik-v-0877b7242/)")
     st.sidebar.write("[Gaurav Ratra](https://www.linkedin.com/in/gaurav-ratra-505020179/)")
-    st.sidebar.write("Copyright © HEALT INFI . All rights reserved")
+    st.sidebar.write("Copyright © HEALTH INFI . All rights reserved")
 
 # Diabetes Prediction Page
 if selected == 'Diabetes Prediction':
@@ -163,22 +163,22 @@ if selected == 'Diabetes Prediction':
         Pregnancies = st.text_input('Number of Pregnancies')
 
     with col2:
-        Glucose = st.text_input('Glucose Level')
+        Glucose = st.text_input('Glucose Level ')
 
     with col3:
-        BloodPressure = st.text_input('Blood Pressure value')
+        BloodPressure = st.text_input('Blood Pressure value ')
 
     with col1:
-        SkinThickness = st.text_input('Skin Thickness value')
+        SkinThickness = st.text_input('Skin Thickness value <0 - 60> ')
 
     with col2:
-        Insulin = st.text_input('Insulin Level')
+        Insulin = st.text_input('Insulin Level <0 - 1000>')
 
     with col3:
-        BMI = st.text_input('BMI value')
+        BMI = st.text_input('BMI value <0 - 70>')
 
     with col1:
-        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+        DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value <0 - 1> ')
 
     with col2:
         Age = st.text_input('Age of the Person')
@@ -232,25 +232,25 @@ if selected == 'Heart Disease Prediction':
         cp = st.text_input('Chest Pain types')
 
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure')
+        trestbps = st.text_input('Resting Blood Pressure <0 -200> ' )
 
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
+        chol = st.text_input('Serum Cholestoral in mg/dl <0 -500> ')
 
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
+        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl < 0 / 1> ')
 
     with col1:
-        restecg = st.text_input('Resting Electrocardiographic results')
+        restecg = st.text_input('Resting Electrocardiographic results <0 / 1> ')
 
     with col2:
-        thalach = st.text_input('Maximum Heart Rate achieved')
+        thalach = st.text_input('Maximum Heart Rate achieved <0 - 300>')
 
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
+        exang = st.text_input('Exercise Induced Angina <0 / 1>')
 
     with col1:
-        oldpeak = st.text_input('ST depression induced by exercise')
+        oldpeak = st.text_input('ST depression induced by exercise <0 - 10>')
 
     with col2:
         slope = st.text_input('Slope of the peak exercise ST segment')
