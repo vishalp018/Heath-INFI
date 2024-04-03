@@ -141,6 +141,7 @@ if selected == 'Home':
     st.sidebar.write("[Vishal Pal](https://www.linkedin.com/in/vishalp018/)")
     st.sidebar.write("[Vadapalli Kausik Varma](https://www.linkedin.com/in/kausik-v-0877b7242/)")
     st.sidebar.write("[Gaurav Ratra](https://www.linkedin.com/in/gaurav-ratra-505020179/)")
+    st.sidebar.write("Copyright © HEALT INFI . All rights reserved")
 
 # Diabetes Prediction Page
 if selected == 'Diabetes Prediction':
@@ -204,6 +205,12 @@ if selected == 'Heart Disease Prediction':
     st.title('Heart Disease Prediction using ML')
 
     col1, col2, col3 = st.columns(3)
+
+    with col1:
+        name = st.text_input('Name')
+
+    with col2:
+        Date = st.text_input('')
 
     with col1:
         age = st.text_input('Age')
