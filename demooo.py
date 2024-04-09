@@ -6,7 +6,7 @@ from streamlit_option_menu import option_menu
 
 # Set page configuration
 st.set_page_config(
-    page_title="HEALTH IFNI",
+    page_title="HEALTH INFI",
     layout="wide",
     page_icon="🩺",
     initial_sidebar_state="collapsed",
@@ -109,13 +109,6 @@ if selected == 'Home':
     The prediction is based on 4 different machine learning models.
     Use the sidebar to navigate to specific prediction pages.
 
-    ### Breast Cancer Prediction
-    This model utilizes scikit-learn to implement a logistic regression model for breast cancer prediction.
-    After loading the breast cancer dataset and organizing it into features and target variables, the data is split into training and testing sets.
-    A logistic regression model is then trained using the training data.
-    The accuracy of the model is evaluated on both the training and testing sets, providing insights into its performance.
-    Subsequently, the trained model is used to make predictions on new data, showcasing its application for predicting whether a tumor is malignant or benign.
-    Additionally, the code includes a mechanism to save the trained model using the pickle library, facilitating reuse without the need for retraining.
 
     ### Diabetes Prediction
     This Model utilizes the scikit-learn library to develop a Support Vector Machine (SVM) classifier for predicting diabetes based on the PIMA Diabetes dataset.
@@ -134,6 +127,14 @@ if selected == 'Home':
     The dataset is loaded and analyzed, including an examination of the first and last 10 rows, checking for missing values, and exploring basic statistics.
     The dataset is then split into training and testing sets, and the features are standardized using StandardScaler. A linear SVM model is trained on the standardized training data, and its accuracy is evaluated on both the training and test datasets.
     Finally, a predictive system is established to make predictions on new input data, and the trained SVM model is saved using the pickle library for future use in Parkinson's disease prediction tasks.
+   
+    ### Breast Cancer Prediction
+    This model utilizes scikit-learn to implement a logistic regression model for breast cancer prediction.
+    After loading the breast cancer dataset and organizing it into features and target variables, the data is split into training and testing sets.
+    A logistic regression model is then trained using the training data.
+    The accuracy of the model is evaluated on both the training and testing sets, providing insights into its performance.
+    Subsequently, the trained model is used to make predictions on new data, showcasing its application for predicting whether a tumor is malignant or benign.
+    Additionally, the code includes a mechanism to save the trained model using the pickle library, facilitating reuse without the need for retraining.
 """, unsafe_allow_html=True)
     
     # GitHub icons and link on the left
