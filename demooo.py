@@ -104,7 +104,7 @@ if selected == 'Home':
     st.markdown("""
     ## Disease Prediction System
     
-    Welcome to the Health INFI Disease Prediction System, created by team vishal,kausik,gaurav. 
+    Welcome to the Health INFI Disease Prediction System, created by team vishal pal,lavanya bansal,kausik,gaurav. 
     This application allows you to predict the likelihood of having different diseases: Diabetes, Heart Disease, Parkinson's Disease, and Breast Cancer.
     The prediction is based on 4 different machine learning models.
     Use the sidebar to navigate to specific prediction pages.
@@ -139,6 +139,7 @@ if selected == 'Home':
     # GitHub icons and link on the left
     st.sidebar.subheader('Connect with Team: ')
     st.sidebar.write("[Vishal Pal](https://www.linkedin.com/in/vishalp018/)")
+    st.sidebar.write("[Lavanya bansal](https://www.linkedin.com/in/lavanya-bansal-884463259/)")
     st.sidebar.write("[Vadapalli Kausik Varma](https://www.linkedin.com/in/kausik-v-0877b7242/)")
     st.sidebar.write("[Gaurav Ratra](https://www.linkedin.com/in/gaurav-ratra-505020179/)")
 
